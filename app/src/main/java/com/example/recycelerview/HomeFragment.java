@@ -3,6 +3,7 @@ package com.example.recycelerview;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -34,6 +35,13 @@ public class HomeFragment extends Fragment {
         llm.setOrientation(RecyclerView.VERTICAL);
         binding.employeeRV.setLayoutManager(llm);
         binding.employeeRV.setAdapter(employeeAdapter);
+
+
+
+
+        binding.AdminBTN.setOnClickListener(view -> {
+            Navigation.findNavController(view).navigate(R.id.home_to_admin_action);
+        });
         return binding.getRoot();
     }
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp"
+    app:contentPadding="6dp"
+    android:layout_margin="7dp"
+    app:cardBackgroundColor="#3C3813">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/rowAdminImage"
+            android:src="@drawable/person"
+            android:alpha="0.4"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowAdminName"
+            android:text="Admin Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/rowAdminImage"/>
+        <TextView
+            android:id="@+id/rowAdminSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Salary"
+            android:textStyle="italic"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:layout_below="@id/rowAdminName"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/rowAdminImage"/>
+        <TextView
+            android:id="@+id/rowAdminPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Admin phoneNumber"
+            android:textStyle="italic"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:layout_below="@id/rowAdminSalary"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/rowAdminImage"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
